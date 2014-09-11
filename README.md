@@ -6,7 +6,7 @@ A Meteor package that enables user authorization based on GitHub username or Git
 Installation
 ------------
 
-meteor add cx:github-authorization
+meteor add cxinc:github-authorization
 
 Usage
 -----
