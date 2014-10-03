@@ -30,7 +30,13 @@ For example:
       "org": "CXInc",
     }
 
-Somewhere in your client code, add this so that you'll have access to the authorization status of the user:
+Somewhere in your client code, add this so that you'll get the right info from GitHub, have access to the authorization status of the user:
+
+    Accounts.ui.config({
+      requestPermissions: {
+        github: ['repo']
+      }
+    });
 
     Meteor.startup(function() {
       return Deps.autorun(function() {

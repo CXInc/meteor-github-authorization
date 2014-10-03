@@ -14,7 +14,6 @@ Package.onUse(function(api) {
 
   api.addFiles(['server/authorization.coffee'], ['server']);
   api.addFiles(['server/users.coffee'], 'server');
-  api.addFiles(['client/account_permissions.coffee'], 'client');
 
   api.export('Authorization', ['server']);
 });
