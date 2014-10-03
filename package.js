@@ -9,6 +9,7 @@ Package.onUse(function(api) {
 
   api.use('bruz:github-api@0.2.2', ['server']);
   api.use('coffeescript', ['server']);
+  api.use('accounts-base', ['server']);
 
   api.addFiles(['server/authorization.coffee'], ['server']);
   api.addFiles(['server/users.coffee'], 'server');

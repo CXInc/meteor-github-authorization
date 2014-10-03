@@ -1,4 +1,6 @@
 Meteor.users.find({}).observe
   added: (user) ->
-    unless user.authorized
-      Authorization.authorize(user)
+    Authorization.authorize(user)
+
+Accounts.onLogin (info) ->
+  Authorization.authorize(info.user)
