@@ -1,6 +1,4 @@
-Meteor.users.find({}).observe
-  added: (user) ->
-    Authorization.authorize(user)
-
 Accounts.onLogin (info) ->
-  Authorization.authorize(info.user)
+  if info.user
+    console.log "Accounts.onLogin"
+    Authorization.authorize(info.user)
