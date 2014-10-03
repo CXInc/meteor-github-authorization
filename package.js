@@ -1,7 +1,7 @@
 Package.describe({
   name: "cxinc:github-authorization",
   summary: "Authorize users based on their github username or organization membership",
-  version: "0.2.0",
+  version: "0.2.1",
   git: "https://github.com/CXInc/meteor-github-authorization"
 });
 
